@@ -1,0 +1,78 @@
+ssh-keygen -t rsa -b 4096
+
+sudo -H -u postgres ssh-keygen -t rsa -b 4096
+
+cat /var/lib/postgresql/.ssh/id_rsa.pub
+
+scp $HOME/.ssh/id_rsa.pub user@server1.cyberciti.biz:~/.ssh/authorized_keys - copy ssh pub keys to remote server
+
+chmod 700 ~/.ssh
+
+chmod 600 ~/.ssh/*
+
+disable password sudo vi /etc/ssh/sshd_config
+
+sudo service ssh restart
+
+ssh-copy-id eze@ip_address - copy ssh pub keys to remote server
+
+sudo passwd username - to change an account password
+
+ssh standard port - 22, you can change it to any port you want
+
+-eq - how to test equality between numbers as "=" is only for strings
+
+ggVG - select all then d to delete
+
+:1 go to first line
+
+:% go to last line
+
+:set number - show line numbers on vim
+
+crontab -e - to open your file to set up your cron job
+
+/var/spool/cron/crontabs/* - directory for cron jobs of individual accounts
+
+/etc/crontab - file for system cron jobs, only accessible to root user
+
+:%d - delete all lines
+
+gg"*yG - copy all lines to clipboard
+
+gg - go to beginninh of file
+
+G - go to end of file
+
+gUw - capitalise word
+
+dw - delete word when cursor is at first letter
+
+diw - delete word when cursor is at any position
+
+select * from pg_stat_replication; - from master
+select * from pg_stat_wal_receiver; - for slave
+
+truncate -s 0 /var/log/postgresql/*.log
+
+vi /etc/postgresql/14/main/postgresql.conf
+vi /etc/postgresql/14/main/pg_hba.conf
+vi /var/lib/postgresql/14/main/postgresql.auto.conf
+cat /var/log/postgresql/*.log
+
+
+pg_createcluster -u postgres -g postgres  -p 5432 -d /var/lib/postgresql/14/main 14 main
+rm -rf /var/lib/postgresql/14/main/*
+pg_basebackup -h 192.168.56.102 -U replicator -X stream -C -S slot_4 -v -R -W -D /var/lib/postgresql/14/main/
+
+$ - end of line
+^ - start of line
+w - end to current word
+b - beginning of current word
+
+cw - change word
+cc - change line
+U - undo line change
+P - put above
+p - put below
+
