@@ -1,0 +1,7 @@
+isspace(" ") - returns true if a string contains only wite spaces
+
+strip(" My Name is blah") - strip white spaces
+
+post and pre increment and decrement operators are not allowed in python
+
+a python dictionary is ordered for python 3.6 and beyond, meaning the keys maintain their indices and can be traversed with a for in loop
