@@ -1,0 +1,14 @@
+COMMON SENSE GUIDE
+
+However, we do know that there’s a specific range in which O(N * M) lies. That
+is, if N and M are the same, it’s equivalent to O(N2). And if they’re not the
+same, and we arbitrarily assign the smaller number to be M, even if M is as
+low as 1, we end up with O(N). In a sense then, O(N * M) can be construed
+as a range between O(N) and O(N2).
+
+Password generator might use an algorithm of O(26)n – Each time we add one element od data, the algorithm doubles in steps
+
+One  area in which
+recursion shines is where we need to act on a problem that has an arbitrary
+number of levels of depth. A second area in which recursion shines is where
+it is able to make a calculation based on a subproblem of the problem at hand

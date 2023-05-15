@@ -2,6 +2,10 @@ isspace(" ") - returns true if a string contains only wite spaces
 
 strip(" My Name is blah") - strip white spaces
 
+type(myVariableName) is list -  would return true or false based on if the variable type myVariableName is a list or not
+
 post and pre increment and decrement operators are not allowed in python
+
+isinstance(myList, list) would return true or false based on if the variable type myList is a list or not
 
 a python dictionary is ordered for python 3.6 and beyond, meaning the keys maintain their indices and can be traversed with a for in loop
