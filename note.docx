@@ -12,3 +12,15 @@ One  area in which
 recursion shines is where we need to act on a problem that has an arbitrary
 number of levels of depth. A second area in which recursion shines is where
 it is able to make a calculation based on a subproblem of the problem at hand
+
+computer science literature
+refers to the terms bottom up and top down in regard to recursion strategies.
+
+This brings us to the central point of this chapter: recursion shines when
+implementing a top-down approach because going top down offers a new
+mental strategy for tackling a problem. That is, a recursive top-down approach
+allows one to think about a problem in a completely different way
+
+Specifically, when we go top down, we get to mentally “kick the problem down
+the road.” We can free our mind from some of the nitty-gritty details we normally
+have to think about when going bottom up.
