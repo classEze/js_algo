@@ -1,0 +1,26 @@
+POSTGRES CREATE CLUSTER COMMANDS
+
+initdb -D "C:\data\postgres_instance_2" -W -A md5
+
+pg_ctl start -D "C:data\postgresinstance_2" -o -p {PORT}
+
+
+pg_ctl register -N postgres_instance_2 -D "C:data\postgresinstance_2"
+
+pg_basebackp -D <data_directory> -h <master_host> -X stream -c fast -U rep_user -W
+
+pg_basebackup -h 194.195.208.82 -U replica_user -X stream -C -S replica_1 -v -R -W -D /var/lib/postgresql/14/main/
+
+SELECT client_addr, state FROM pg_stat_replication;
+
+pg_basebackup -h 127.0.0.1 -U replicator -X stream -C -S slave_1 -v -R -W -D /C:\Users\User\Desktop\Cluster_2
+
+db_user - Password
+
+eze - Biochemistry@1234
+
+\l - list databases , \du - list users, \dt - list tables, \c db_name - use database, 
+
+ssh
+
+:set number - to display line numbers in vim
