@@ -1,0 +1,6 @@
+REACT / REACT NATIVE
+
+
+**react-burger-menu package to do responsive burger menu for mobile screens
+**react-responsive package to do useMediaQuery and style components differently depending on screen size
+
