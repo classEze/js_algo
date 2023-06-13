@@ -1,0 +1,41 @@
+REACT / REACT NATIVE
+
+
+**react-burger-menu package to do responsive burger menu for mobile screens
+**react-responsive package to do useMediaQuery and style components differently depending on screen size
+
+STYLED ComponentsA way to write ordinary css inside react using javascript string literal
+
+e.g
+const Container = styled.div(`
+  width:1000px;
+  color:blue;
+  background-color:yellow;
+  height:${(props)=> props.height};
+  &:hover{
+
+  };
+  h2{
+    color:black
+  }
+`
+
+)
+
+So you can wrap ypur whole app with a theme provider component imported from styled-components. You then give this a theme prop which could be an object having several nested objects for key values which you can destructure within your styled component styling and use
+
+You can use {createGlobalStyles} to create a block of css styles and resets , then import it and render within your top level app component
+
+You can import fonts within your createGlobalStyles`
+@import url("https://blah-blah")
+
+p{
+    padding:0;
+    margin:0
+}
+`
+
+so styled components means no classes right ?? yeah, and means your styles for a particular component are all enclosed in one place, easy to debug and modify
+
+
+

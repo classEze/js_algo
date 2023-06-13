@@ -1,0 +1,30 @@
+ SDLF
+
+Requirement Gathering AND Analysis
+
+Planning
+
+Design
+
+Development
+
+Testing
+
+Deployment
+
+Maintenance
+
+
+PREREQUISITES - SECTION 2
+shift insert to paste on the terminal
+
+So we have installed chocolatey by running some Set_Execution from the chocolatey website.
+
+we have installed aws-cli using choco install command from powershell. 
+
+we have also created an account on sonar cloud and created a project.
+
+Now he bought a domain on godaddy before, he then went ahead to generate/request a certificate on ACM and then copy the CNAME records
+ of that certificate over to godaddy domain manager. I will have to do this later
+
+ Section 2 - Prerequisites done June 12th 2023. Progress surely

@@ -1,0 +1,77 @@
+LINUX FOR DEVOPS
+
+FREE – STABLE – OPEN SOURCE
+
+sudo bash – will switch to the root user, su will do same
+
+su eze – to switch to user eze
+sudo useradd Alvin
+sudo passwd Alvin
+sudo userdel Alvin 
+sudo groupadd
+sudo groupdel
+cat –n
+cat –b
+cat –s
+mv –I move in interactive mode
+mv –u  update destination file only if source file is different
+rm –rp – removes non empty directories recursively
+mkdir –p – create directories and subdirectories if thery do not exist
+rmdir – removes empty directories
+rmdir –pv remove parent and sub directories
+grep cat filename – search for cat in the file filename
+grep –in return strings along with line number , I – case insensitive
+grep –v :negative , not matching
+grep –c – count return number of lines where there is a match
+sort  filename – returns contents of a file sorted. –rnf – reverse, numeric, case insensitive
+lsof – list of open files
+lsof –u username
+id –G, -g, -u to tag on a username, - to view a user
+tar –cvf filename sourcefoldername – to zip a folder into a file
+tar –xvf filename – to unzip a tar file
+cut – c1-2 filename – display columns 1 – 2
+sed – file editing command
+sed  ‘s/eze/cheerful/’ filename – replace eze with cheerful in this file
+uniq – only return unique lines
+watch –d free –m – watch for changes
+
+eval -  
+
+history 5 – view previously executed commands
+dd  if  = /dev/hda of dev/hdb –back up harddrive
+free –b,m,g,k bytes,kilobytes, gig, kilobytes – displays memory usage of the company
+ip address
+ip link
+ifconfig – interface config – use to assign ip addresses and net mask to a network interface
+ifconfig –a – display all interfaces
+ifconfig –s – display a short list
+netstat – displays routing tables, network information
+netstat –ap
+nslookup – queries domain name servers to get details of an ip address or a url
+curl 
+awk – a scripting language used for manipulating data and generating reports, requires no compiling
+awk ‘{print}’ filename
+awk ‘/Ram {print}’ filename
+tr – translate and deleting characters, find and replace
+cat filename | tr [a-z] [A-Z]
+env – print environment variables
+env –I – run command without environment variables
+env –u variable name -  Remove environment variable
+iptables 
+
+service iptables stop – disable firewalls
+
+apt-get – CLT used to manage packages in linux – Advanced Packaging Tool
+yum for red hat based systems
+
+df – disk free
+sudo df –h 
+
+sudo du –h –d 1 /var
+
+SHELL SCRIPTING
+The shell wraps round the delicate interior of an OS thereby protecting it from interior damage, hence the name shell
+
+GIT
+git show commit hash
+git branch –d branchname
