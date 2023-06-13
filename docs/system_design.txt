@@ -197,6 +197,33 @@ Downside of FIFO ordered queue – blocking if a message consumption fails
 
 Neglected queue.
 
+PUB SUB MODEL OF Queues
+
+Publisher - > Input Channe || Message Broker || Output channel - > Subscribers
+
+Message broker transforms or modifies the event from the input channel into some certain form before saving it on the output channel
+
+Publisher creates and send messages to a topic
+
+Subscribers create a subscription to a topic to receive messages from it
+
+PUB SUB Features/Factors to consider
+
+Message ordering - 
+
+Message consumption
+
+Poison messages
+
+Duplicated messages
+
+PUB SUB USE classes
+Async workflow eg order placement
+Decoupling 
+Load balancing
+Deferred processing eg uploading invoices to S3
+Data streaming
+
 
                                   
 
