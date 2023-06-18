@@ -108,3 +108,22 @@ allows one to think about a problem in a completely different way
 Specifically, when we go top down, we get to mentally “kick the problem down
 the road.” We can free our mind from some of the nitty-gritty details we normally
 have to think about when going bottom up.
+
+Quick sort has an efficiency of 0(N log N) for best case scenario and 0( N ^2) for worst case scenario.
+
+Best case scenario occurs when the elements are evenly missed up while worst case scenario occurs
+ when the elements are either in perfect ascending or descending order - a lot of swaps and comparisons have to be made
+
+ Best Case Average Case Worst Case
+Insertion Sort O(N) O(N2) O(N2)
+Quicksort O(N log N) O(N log N) O(N2)
+We can see they have identical worst-case scenarios, and that Insertion Sort
+is actually faster than Quicksort in a best-case scenario. However, the reason
+Quicksort is superior to Insertion Sort is because of the average scenario—which,
+again, is what happens most of the time. For average cases, Insertion Sort
+takes a whopping O(N2), while Quicksort is much faster at O(N log N).
+Because of Quicksort’s superiority in average circumstances, many programming
+languages use Quicksort under the hood of their built-in sorting functions.
+Because of this, it’s unlikely you’ll be implementing Quicksort yourself.
+However, there is a very similar algorithm that can come in handy for practical
+cases—and it’s called Quickselect.
