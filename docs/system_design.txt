@@ -224,6 +224,58 @@ Load balancing
 Deferred processing eg uploading invoices to S3
 Data streaming
 
+Performance metrics
+Throughput - Amount of workdone in a particular time
+  How many APi calls are served for a particular time
+
+
+Bandwidth - Has to deal with data getting transferred over networks
+
+Response time - 
+
+Latency
+
+Performance metrics for an application -
+Api Response time
+Api Throughput
+Number of bugs from the application
+Number of times the app crashes due to error
+
+DB Performance
+Measure how long db queries run
+Number of queries running for a particular time
+
+CACHE Performance
+Latency of writing to cache
+Eviction and invalidation
+Cache Memory
+
+Message Queue Performance
+Rate of production and consumption
+Fraction of stale or unprocessed message
+
+Worker Performance
+Time taken for job completion
+Resources the worker is using 
+
+SERVER INSTANCE Performance
+
+
+PERFORMANCE MEASUREMENT TOOLS
+Data dogs
+Neural link
+
+
+Fault Vs Failures
+Fault causes Failure
+
+Horizontal Vs Vertical Scaling
+A scalable system should be able to handle increased load without getting so complex and not taking a performance hit
+
+**We should be able to write simple clean code that can be deployed on multiple instances
+
+
+
 
                                   
 

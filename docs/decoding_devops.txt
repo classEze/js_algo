@@ -28,3 +28,38 @@ Now he bought a domain on godaddy before, he then went ahead to generate/request
  of that certificate over to godaddy domain manager. I will have to do this later
 
  Section 2 - Prerequisites done June 12th 2023. Progress surely
+
+ SECTION 3
+ VM Machine
+ Problem with Spinning up servers before VM technology -
+ Servers were always overprovisioned - 20Gig ram would be provisioned for a 10Gig RAM database
+ One service one server
+ It was a big deal to run an IT project eg 15 - 10 servers for one project.
+
+ There came VMWARE which enabled us to run many OS to run 0n one physical machines
+ There is network virtualization, storage virtualization etc
+ Hypervisor, a software allows you to create a virtual machine haviing its own OS on which you can run your apps.
+ SNAPSHOT - A backup of a guest machine
+
+ Hypervisor types - 
+        Type 1 - Bare metal - runs as a base OS, only used on production eg microsoft Hyper V
+        Type 2 - for testing and learning eg oracle vm. virtual box
+
+**If you want to automate anything, first learn to do it manually
+
+He downloaded server Os and not desktop OS first
+VAGRANT - AN automation tool to manage your VM life cycle
+Vagrant is not graphical, it is a command line tool, it is simply used to automate spinning up a vm by just editing the vagrant file
+
+Vagrant commands i ran include 
+vagrant init centos/7 - to create vagrant file with the image configurations from vagrant cloud
+vagrant up - to download box image from vagrant cloud to your laptop if not exist AND run the box image to bring up the vm
+vagrant halt
+vagrant destroy --force
+
+
+Virtual box is not supported on Mac M1 Chip
+Fedora similar to centos
+
+MAC VMWare fusion, vagrant plugin
+*** :wq - write and quit
