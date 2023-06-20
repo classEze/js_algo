@@ -127,3 +127,48 @@ languages use Quicksort under the hood of their built-in sorting functions.
 Because of this, it’s unlikely you’ll be implementing Quicksort yourself.
 However, there is a very similar algorithm that can come in handy for practical
 cases—and it’s called Quickselect.
+
+Quick Select combines sorting and binary search to find an element within an array.
+It does the normal partitioning or reshuffling, then comares the correctly positioned index to the sought after index to see if they are same.
+This hinges on the fact that after every round of partitioning, the pivot is correctly positioned within the array, so if by chance, its correct index is the index we are looking for ??, we just return it and close for the day.
+
+So they went on to write an algorithm which finds out if an array has duplicates, by first sorting the array, then using a single loop to check each element if its same as the next, if it is, then the array has duplicates, we return and close.
+
+Plenty of algorithms employ sorting as part of a larger process. We now know
+that any time we do so, we have an algorithm that is at least O(N log N). Of
+course, the algorithm may be slower than this if it has other things going on,
+but we know that O(N log N) will always be the baseline.
+
+Linked lists, on the other hand, work quite differently from array lists. Instead of being a
+contiguous block of memory, the data from linked lists can be scattered across
+different cells throughout the computer’s memory.
+Connected data that is dispersed throughout memory are known as nodes.
+In a linked list, each node represents one item in the list.
+
+The fact that a linked list’s data can be spread throughout the computer’s
+memory is a potential advantage it has over the array. An array, by contrast,
+needs to find an entire block of contiguous cells to store its data, which can
+get increasingly difficult as the array size grows
+
+***LINKED LIST INSERTION
+We then use a while loop to access the node just before the spot where we want
+to insert our new_node:
+
+This might help in fixing your indices for whe traversing a linked list
+first pass : 0 -> 1 . index is zero, currentNode.next returns node at index 1,
+
+So to read, i have to access till counter of position - 1
+so, if i want to read node at index 5, i have to increase counter until 4, when currentNode.next gives node at index 5.
+
+For insertion or deletion, we may just have to get to the node immediately before the index we want to insert, so position minus 2
+
+It turns out, then, that linked lists are an amazing data structure for moving
+through an entire list while making insertions or deletions, as we never have
+to worry about shifting other data as we make an insertion or deletion.
+
+Now, since queues insert at the end and delete from the beginning, arrays
+are only so good as the underlying data structure. While arrays are O(1) for
+insertions at the end, they’re O(N) for deleting from the beginning.
+A doubly linked list, on the other hand, is O(1) for both inserting at the end
+and for deleting from the beginning. That’s what makes it a perfect fit for
+serving as the queue’s underlying data structure.
